@@ -42,7 +42,7 @@ export class Task {
    * @returns {String}
    * @memberof Task
    */
-  public getTitle() : String {
+  public getTitle(): String {
     return this.name;
   }
 
@@ -52,7 +52,7 @@ export class Task {
    * @returns {boolean}
    * @memberof Task
    */
-  public isCompleted() : boolean {
+  public isCompleted(): boolean {
     return this.complete;
   }
 

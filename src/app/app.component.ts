@@ -59,7 +59,7 @@ export class AppComponent implements OnInit {
    * @memberof AppComponent
    */
   constructTasks(tasks) {
-    for (var index in tasks) {
+    for (const index in tasks) {
       tasks[index] = new Task(tasks[index].name, tasks[index].complete ? tasks[index].complete : false, tasks[index].id);
     }
     return tasks;
@@ -115,10 +115,10 @@ export class AppComponent implements OnInit {
       mutation: Query.AddTasks,
       variables: {
         tasks: [{
-          "name": name
+          name
         }]
       }
-    }).subscribe((data)=> console.log(data));
+    }).subscribe((data) => console.log(data));
   }
- 
+
 }

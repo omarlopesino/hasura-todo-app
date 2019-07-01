@@ -74,7 +74,7 @@ export class AppModule {
     );
 
     this.apollo.create({
-      link: link,
+      link,
       cache: new InMemoryCache()
     });
 
